@@ -15,29 +15,22 @@
                     <div fxLayout="column" fxLayoutAlign="center center" class="text-center">
                         <mat-icon color="primary" class="mat-icon-lg">home</mat-icon>
                         <h3 class="primary-color py-1">ADRESA :</h3>
-                        <span>2903 Avenue Z, Brooklyn, New York City</span>
+                        <span>Bišće polje bb</span>
                     </div>
                 </div>
-                <div fxFlex="100" fxFlex.gt-xs="33.3" ngClass.xs="mt-2">
-                    <div fxLayout="column" fxLayoutAlign="center center">
-                        <mat-icon color="primary" class="mat-icon-lg">call</mat-icon>
-                        <h3 class="primary-color py-1">TELEFONI :</h3>
-                        <span>(212) 457-2308</span>
-                        <span>(212) 457-2309</span>
-                    </div>
-                </div>
+
                 <div fxFlex="100" fxFlex.gt-xs="33.3" ngClass.xs="mt-2">
                     <div fxLayout="column" fxLayoutAlign="center center">
                         <mat-icon color="primary" class="mat-icon-lg">mail_outline</mat-icon>
                         <h3 class="primary-color py-1">E-MAIL :</h3>
-                        <span>contact@housekey.com</span>
-                        <span>info@housekey.com</span>
+                        <span>hello@factoryofinnovations.com </span>
+
                     </div>
                 </div>
                 <div class="divider w-100 mt-3"></div>
                 <h3 class="w-100 text-center py-3">KONTAKTIRAJ NAS</h3>
                 
-                <form [formGroup]="contactForm" (ngSubmit)="onContactFormSubmit(contactForm.value)" fxLayout="row wrap">
+                <form [formGroup]="contactForm" (ngSubmit)="send()" fxLayout="row wrap">
                     <div fxFlex="100" fxFlex.gt-sm="33.3" class="px-1" ngClass.sm="mt-1" ngClass.xs="mt-1">
                         <mat-form-field appearance="outline" class="w-100">
                             <mat-label>Ime</mat-label>
